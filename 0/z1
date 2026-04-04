@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo systemctl start zapret_discord_youtube.service

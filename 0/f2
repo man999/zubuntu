@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#/sys/devices/system/cpu/cpufreq/policy{0..7}/scaling_max_freq
+sudo cpupower frequency-set -u 2.1GHz
