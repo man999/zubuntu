@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+lscpu -e=CPU,MHZ
+#sudo cpupower frequency-info

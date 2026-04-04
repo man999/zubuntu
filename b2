@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo echo "0" > /sys/devices/system/cpu/cpufreq/boost
