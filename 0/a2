@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+echo set max powersave
+#turbo boost
+echo -n "boost cur: "
+cat /sys/devices/system/cpu/cpufreq/boost
+cpupower set -t 0
+echo -n "boost new: "
+cat /sys/devices/system/cpu/cpufreq/boost
+#max_freq
+echo -n "max_freq cur: "
+cat /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+cpupower frequency-set -u 1.4GHz > /dev/null
+echo -n "max_freq new: "
+cat /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+#governor
+echo -n "scaling_governor cur: "
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+echo -n "scaling_governor new: "
+echo powersave | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+#
+echo -n "zapret status: "
+systemctl status zapret_discord_youtube.service | grep Active | cut -w -f 3
+#
+echo "for stress test: stress --cpu 8"
+echo "for temp monitor: watch -n 1 sensors"
