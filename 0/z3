@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-sudo systemctl status zapret_discord_youtube.service
+echo -n "zapret status: "
+systemctl status zapret_discord_youtube.service | grep Active | cut -w -f 3

@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-sudo systemctl stop zapret_discord_youtube.service
+systemctl stop zapret_discord_youtube.service
+./z3
