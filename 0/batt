@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo battery:
+upower -i /org/freedesktop/UPower/devices/battery_BAT1
