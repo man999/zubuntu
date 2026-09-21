@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#echo starting zapret...
+systemctl start zapret_discord_youtube.service
+./zapret_stat

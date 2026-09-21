@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#echo set turbo boost off
+echo "0" > /sys/devices/system/cpu/cpufreq/boost
+#sudo cpupower set -t 0
+./tboost_stat

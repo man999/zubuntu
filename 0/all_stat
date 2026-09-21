@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#https://github.com/nekr0z/linux-on-huawei-matebook-13-2019
+echo current performance
+./tboost_stat
+./cpufreq_stat
+./scaling_stat
+./zapret_stat
+echo "for stress test: stress --cpu 8"
+echo "for temp monitor: watch -n 1 sensors"

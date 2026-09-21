@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+#echo stopping zapret...
 systemctl stop zapret_discord_youtube.service
-./z3
+./zapret_stat

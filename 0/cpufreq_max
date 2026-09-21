@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#/sys/devices/system/cpu/cpufreq/policy{0..7}/scaling_max_freq
+#cpupower frequency-set -u 2.1GHz
+#echo -n "set max cpu freq to "
+echo "2100000" | tee /sys/devices/system/cpu/cpufreq/policy*/scaling_max_freq
+echo -e "\033[1A\033[K\033[1A"
+./cpufreq_stat

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#echo set turbo boost on
+echo "1" > /sys/devices/system/cpu/cpufreq/boost
+#sudo cpupower set -t 1
+./tboost_stat

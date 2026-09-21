@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+echo -n "turbo boost status : "
 cat /sys/devices/system/cpu/cpufreq/boost

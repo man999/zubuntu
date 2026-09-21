@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#sudo echo "0" > /sys/devices/system/cpu/cpufreq/boost
-sudo cpupower set -t 0
